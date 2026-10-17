@@ -1,0 +1,41 @@
+@import "./styles/tokens.css";
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.page-header h1 {
+  margin: 0 0 var(--space-2);
+  color: var(--color-text);
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+button {
+  border: 0;
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.directory-panel {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
