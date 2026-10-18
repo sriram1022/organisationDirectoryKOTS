@@ -1,0 +1,58 @@
+
+{
+  "app": {
+    "title": "Organisation Directory",
+    "subtitle": "Search and manage organisations.",
+    "total": "Total organisations",
+    "loading": "Loading organisations...",
+    "loadError": "Could not load organisations. Please try again.",
+    "retry": "Retry",
+    "empty": "No organisations found.",
+    "unnamed": "Unnamed organisation",
+    "noValue": "—"
+  },
+  "search": {
+    "label": "Search by name",
+    "placeholder": "Enter organisation name..."
+  },
+  "filter": {
+    "label": "Filter by status",
+    "all": "All statuses",
+    "active": "Active",
+    "inactive": "Inactive",
+    "suspended": "Suspended",
+    "unknown": "Unknown"
+  },
+  "table": {
+    "name": "Name",
+    "status": "Status",
+    "members": "Members",
+    "owner": "Owner",
+    "createdAt": "Created date",
+    "sortAscending": "Sort ascending",
+"sortDescending": "Sort descending"
+  },
+   "form": {
+    "title": "Create organisation",
+    "open": "Add organisation",
+    "name": "Organisation name",
+    "namePlaceholder": "Enter organisation name",
+    "status": "Status",
+    "ownerEmail": "Owner email",
+    "ownerEmailPlaceholder": "name@example.com",
+    "memberCount": "Member count (optional)",
+    "submit": "Create organisation",
+    "cancel": "Cancel",
+    "nameRequired": "Organisation name is required.",
+    "nameLength": "Name must be between 3 and 80 characters.",
+    "nameDuplicate": "An organisation with this name already exists.",
+    "statusRequired": "Please select a status.",
+    "emailRequired": "Owner email is required.",
+    "emailInvalid": "Enter a valid email address.",
+    "memberCountInvalid": "Member count must be a non-negative whole number.",
+    "success": "Organisation created successfully.",
+    "duplicateIdNote": "This demo creates records locally; no backend is connected."
+  }
+
+
+}

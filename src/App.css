@@ -1,4 +1,4 @@
-@import "./styles/tokens.css";
+@import "./styles/token.css";
 
 .page {
   max-width: 1200px;
@@ -24,6 +24,10 @@
   color: var(--color-muted);
 }
 
+.create-organisation-button {
+  flex: 0 0 auto;
+}
+
 button {
   border: 0;
   border-radius: var(--radius);
@@ -38,4 +42,207 @@ button {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-surface);
+}
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+th {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+td {
+  overflow-wrap: anywhere;
+}
+
+button {
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 220px;
+}
+
+.filter-field label {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.filter-field input,
+.filter-field select {
+  width: 100%;
+  min-height: 40px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.filter-field input:focus,
+.filter-field select:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.directory-panel {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+
+.sort-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  text-decoration: underline;
+}
+
+.sort-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+
+.create-form-dialog {
+  box-sizing: border-box;
+  width: min(600px, calc(100% - 32px));
+  max-width: 600px;
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  overflow-y: auto;
+  border: 0;
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 24px 64px rgb(16 24 40 / 24%);
+}
+
+.create-form-dialog::backdrop {
+  background: rgb(16 24 40 / 58%);
+  backdrop-filter: blur(3px);
+}
+
+.create-form-panel {
+  padding: 28px;
+}
+
+.create-form-panel h2 {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.form-description {
+  margin: var(--space-2) 0 var(--space-6);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.create-form-panel form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-field label {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.form-field input[aria-invalid="true"],
+.form-field select[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.field-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.form-actions button[type="button"] {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+@media (max-width: 560px) {
+  .page-header {
+    align-items: flex-start;
+  }
+
+  .create-form-panel {
+    padding: 20px;
+  }
 }
